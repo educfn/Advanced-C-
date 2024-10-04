@@ -7,7 +7,7 @@ using System.IO;
 using _00_Biblioteca;
 using System.Xml.Serialization;
 
-namespace _01_SerializarXML
+namespace _02_SerializarXML
 {
     class Program
     {
