@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35303.130
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "00_Biblioteca", "00_Biblioteca\00_Biblioteca.csproj", "{FBEA092B-1DD1-4C07-A881-6DECDD40C3B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "00_Biblioteca", "00_Biblioteca\00_Biblioteca.csproj", "{FBEA092B-1DD1-4C07-A881-6DECDD40C3B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_SerializarXML", "01_SerializarXML\01_SerializarXML.csproj", "{E1EAF9D3-ECB9-4C06-8029-C2265D48EAA2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01_SerializarXML", "01_SerializarXML\01_SerializarXML.csproj", "{E1EAF9D3-ECB9-4C06-8029-C2265D48EAA2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - Serializar-Deserializar", "01 - Serializar-Deserializar", "{AE588561-C7D1-43F0-847C-5099762D060B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_DeserializarXML", "02_DeserializarXML\02_DeserializarXML.csproj", "{F13A9B1D-29A1-4772-BB40-424D5BBADFB5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02_DeserializarXML", "02_DeserializarXML\02_DeserializarXML.csproj", "{F13A9B1D-29A1-4772-BB40-424D5BBADFB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_SerializarJSON", "03_SerializarJSON\03_SerializarJSON.csproj", "{117AEB10-13C2-4404-A127-63B52560055C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +31,10 @@ Global
 		{F13A9B1D-29A1-4772-BB40-424D5BBADFB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F13A9B1D-29A1-4772-BB40-424D5BBADFB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F13A9B1D-29A1-4772-BB40-424D5BBADFB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{117AEB10-13C2-4404-A127-63B52560055C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{117AEB10-13C2-4404-A127-63B52560055C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{117AEB10-13C2-4404-A127-63B52560055C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{117AEB10-13C2-4404-A127-63B52560055C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -37,6 +43,7 @@ Global
 		{FBEA092B-1DD1-4C07-A881-6DECDD40C3B8} = {AE588561-C7D1-43F0-847C-5099762D060B}
 		{E1EAF9D3-ECB9-4C06-8029-C2265D48EAA2} = {AE588561-C7D1-43F0-847C-5099762D060B}
 		{F13A9B1D-29A1-4772-BB40-424D5BBADFB5} = {AE588561-C7D1-43F0-847C-5099762D060B}
+		{117AEB10-13C2-4404-A127-63B52560055C} = {AE588561-C7D1-43F0-847C-5099762D060B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CD2E075F-B1ED-4686-A726-756E1BA7DD8D}
