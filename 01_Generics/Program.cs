@@ -19,9 +19,15 @@ namespace _01_Generics
             Serializador.Serializar(casa);
             Serializador.Serializar(usuario);
 
-            Carro carro2 = Serializador.Deserializar();
-            Carro casa2 = Serializador.Deserializar();
-            Carro usuario2 = Serializador.Deserializar();
+            Carro carro2 = Serializador.Deserializar<Carro>();
+            Casa casa2 = Serializador.Deserializar<Casa>();
+            Usuario usuario2 = Serializador.Deserializar<Usuario>();
+
+            Console.WriteLine("Carro2: " + carro2.Marca + " - " + carro2.Modelo);
+            Console.WriteLine("Casa2: " + casa2.Cidade + " - " + casa2.Endereco);
+            Console.WriteLine("Usuario2: " + usuario2.Nome + " - " + usuario2.Email);
+
+            Console.ReadKey();
         }
     }
 }
