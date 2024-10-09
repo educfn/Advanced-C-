@@ -21,7 +21,12 @@ namespace _01_Generics
         }
         public static T Deserializar<T>()
         {
-            StreamReader sw = new StreamReader(@"C:\MyCode\Udemy\AdvancedC#\Advanced C#\01_Generics\03_(NomeDaClasse).txt");
+            StreamReader sw = new StreamReader(@"C:\MyCode\Udemy\AdvancedC#\Advanced C#\01_Generics\03_" + typeof(T).Name + ".txt");
+            string conteudo = sw.ReadToEnd();
+
+            T obj = (T)JsonConvert.DeserializeObject(conteudo, typeof(T));
+
+            return obj;
         }
     }
 }
