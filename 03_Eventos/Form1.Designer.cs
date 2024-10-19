@@ -28,12 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            btnVideoEncode = new Button();
+            SuspendLayout();
+            // 
+            // btnVideoEncode
+            // 
+            btnVideoEncode.Location = new Point(38, 86);
+            btnVideoEncode.Name = "btnVideoEncode";
+            btnVideoEncode.Size = new Size(253, 94);
+            btnVideoEncode.TabIndex = 0;
+            btnVideoEncode.Text = "Video Encode";
+            btnVideoEncode.UseVisualStyleBackColor = true;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(342, 226);
+            Controls.Add(btnVideoEncode);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Button btnVideoEncode;
     }
 }
