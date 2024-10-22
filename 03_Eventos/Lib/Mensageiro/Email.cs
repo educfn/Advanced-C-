@@ -8,9 +8,9 @@ namespace _03_Eventos.Lib.Mensageiro
 {
     public class Email
     {
-        public void EnviarMensagem(Video video)
+        public void EnviarMensagem(object sender, VideoEventArgs args)
         {
-            Console.WriteLine("Email enviado para o video " + video.Nome);
+            Console.WriteLine("Email enviado para o video " + args.Video.Nome);
         }
     }
 }

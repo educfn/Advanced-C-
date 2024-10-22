@@ -7,15 +7,31 @@ namespace _03_Eventos
     {
         public Form1()
         {
+
             InitializeComponent();
+
+            btnVideoEncode.Click += EventoDeClick;
+
+            Video video = new Video() { Nome = "video.mp4" };
 
             VideoEncode vid = new VideoEncode();
 
             vid.Encoded += new Email().EnviarMensagem;
             vid.Encoded += new SMS().EnviarMensagem;
-            //vid.Encoded
 
-            btnVideoEncode.Click;
+            vid.Encode(video);
+        }
+
+        public void EventoDeClick(object sender, EventArgs e)
+        {
+            Video video = new Video() { Nome = "video.mp4"};
+
+            VideoEncode vid = new VideoEncode();
+
+            vid.Encoded += new Email().EnviarMensagem;
+            vid.Encoded += new SMS().EnviarMensagem;
+
+            vid.Encode(video);
         }
     }
 }
