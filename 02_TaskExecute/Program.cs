@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading;
 
-namespace _08_AutoManual
+namespace _02_TaskExecute
 {
     class Program
     {
