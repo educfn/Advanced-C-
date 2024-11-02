@@ -15,10 +15,13 @@ namespace _04_Reflection
                 Email = "jose.costa@gmail.com",
                 Senha = "123456ab"
             };
-            Log.GravarUsuario(usuario);
+            Log.Gravar(usuario.Clone());
 
             usuario.Nome = "José Costa";
-            Log.GravarUsuario(usuario);
+            Log.Gravar(usuario.Clone());
+
+            Carro carro = new Carro() { Marca = "FIAT", Modelo = "UNO" };
+            Log.Gravar(carro);
 
             Log.ApresentarLog();
 
